@@ -5,9 +5,6 @@ info: |
   A presentation for aspiring developers on the human skills needed for a successful career in tech.
 transition: fade
 mdc: true
----
-
----
 layout: center
 class: text-center
 ---
