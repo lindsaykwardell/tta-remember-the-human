@@ -10,7 +10,6 @@ mdc: true
 ---
 layout: center
 class: text-center
-image: https://cover.sli.dev
 ---
 
 # Remember the Human
