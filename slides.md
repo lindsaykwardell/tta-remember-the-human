@@ -31,11 +31,15 @@ layout: two-cols
 
 <div class="flex flex-col items-center gap-4">
   <img src="https://cdn.bsky.app/img/avatar/plain/did:plc:dfffydq7eqa5yof4cfeh23vh/bafkreifcll7h5kvls2es3wcatb4brezi73t2b6iryumbkg5or4mirawf54@jpeg" class="w-[200px]" />
-  <img src="https://humansideof.dev/images/logo.jpg" class="w-[150px]" />
+  <img src="https://humansideof.dev/images/logo.jpg" class="w-[100px]" />
 <ul>
   <li class="flex gap-2 items-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="w-6 h-6"><!-- Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>
     <span>lindsaykwardell.com</span>
+  </li>
+    <li class="flex gap-2 items-center border-b border-stone-500">
+    <span class="text-xl w-6 h-6">☕️</span>
+    <span>humansideof.dev</span>
   </li>
   <li class="flex gap-2 items-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="36.25" height="32" viewBox="0 0 256 226" class="w-6 h-6"><!-- Icon from SVG Logos by Gil Barbara - https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt --><path fill="#1185FE" d="M55.491 15.172c29.35 22.035 60.917 66.712 72.509 90.686c11.592-23.974 43.159-68.651 72.509-90.686C221.686-.727 256-13.028 256 26.116c0 7.818-4.482 65.674-7.111 75.068c-9.138 32.654-42.436 40.983-72.057 35.942c51.775 8.812 64.946 38 36.501 67.187c-54.021 55.433-77.644-13.908-83.696-31.676c-1.11-3.257-1.63-4.78-1.637-3.485c-.008-1.296-.527.228-1.637 3.485c-6.052 17.768-29.675 87.11-83.696 31.676c-28.445-29.187-15.274-58.375 36.5-67.187c-29.62 5.041-62.918-3.288-72.056-35.942C4.482 91.79 0 33.934 0 26.116C0-13.028 34.314-.727 55.491 15.172"/></svg>
@@ -561,8 +565,10 @@ layout: section
 
 You won't <em>always</em> be leading, but you <em>can</em>.
 
-<div v-click class="mt-4">
-Show your ability to lead in your every day tasks.
+<span v-click>Show your ability to lead in your every day tasks.</span>
+
+<v-clicks>
+
 <ul class="mt-2">
   <li>High quality code</li>
   <li>Good code reviews</li>
@@ -571,14 +577,17 @@ Show your ability to lead in your every day tasks.
   <li>Sharing ideas, willing to speak up in meetings.</li>
   <li>Strong communication</li>
 </ul>
-</div>
+
+</v-clicks>
 
 ---
 
 # Ask for Opportunities
 
 <div v-click>
+
 If you want to lead a project, **tell your manager**.
+
 </div>
 
 <div v-click class="mt-4">
@@ -586,7 +595,9 @@ Ask what the path to promotion/advancement looks like.
 </div>
 
 <div v-click class="mt-4">
+
 When managers ask where you want to be, **tell them**.
+
 </div>
 
 ---
@@ -599,7 +610,7 @@ layout: section
 layout: two-cols
 ---
 
-# AI is a Tool, Not a Title
+# AI is a Tool
 
 I didn't talk about this yet, because AI isn't something that will make you a senior engineer.
 
@@ -617,20 +628,30 @@ layout: two-cols
 
 ## What AI is Good For
 
+<v-clicks depth="2">
+
 - Doing things _fast_
+  - Or at least feel fast
 - Working through an idea
 - Basic tasks
   - Github Copilot code reviews
   - Scaffolding tests
   - Resolving package issues
 - Getting started on complex tasks
+  - Like scaffolding slides
 - Assisting in what you're working on (e.g. tab-to-complete)
+
+</v-clicks>
 
 ::right::
 
 <div v-click>
 
 ## What AI is Bad For
+
+</div>
+
+<v-clicks depth="2">
 
 - **Communication**: Genuine connection is better than generic.
 - **Getting Experience**: AI solving problems for you doesn't teach you the solutions.
@@ -639,7 +660,7 @@ layout: two-cols
   - It can mix styles and best practices.
   - They're still just large language models, not developers.
 
-</div>
+</v-clicks>
 
 ---
 
@@ -648,12 +669,12 @@ layout: two-cols
 AI cannot understand your users' needs like you do.
 
 <div v-click class="mt-4">
+
 Between you and AI, only **you** can truly think about the person using the code that's being written, or the feature that's being built.
+
 </div>
 
-<div v-click class="mt-4 text-purple-400">
-AI can do exactly what you ask, and still build something that doesn't work for most people.
-</div>
+<h2 class="text-3xl text-center mt-8" v-click>AI can do <span class="text-purple-400">exactly what you ask</span>, and still build something that doesn't work for <span class="text-purple-400">most people</span>.</h2>
 
 ---
 
@@ -677,11 +698,20 @@ Code completion is a tool, it's not a replacement for reason. <em class="text-pu
 
 ---
 layout: center
+---
+
+<h2 class="text-3xl text-center mt-8" v-click>What do I know <span class="text-purple-400">that AI cannot understand</span> about my users?</h2>
+<h2 class="text-3xl text-center mt-8" v-click>What <span class="text-purple-400">biases does AI have</span>? How will they impact my code?</h2>
+
+---
+layout: center
 class: text-center
 ---
 
 # So, where do you want to be in 5 years?
 
+---
+layout: two-cols
 ---
 
 # Set Goals
@@ -695,9 +725,9 @@ The most important skill you can learn is setting goals.
   <li v-click>Goals for yourself.</li>
 </ul>
 
-<div v-click class="mt-4">
-Use frameworks like <b class="text-purple-400">SMART</b> goals.
-</div>
+::right::
+
+<img v-click src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXowbjJlZmdqcGt4NGpsajRzZ3IxeGM3ZG41N2c5emFtbDgzNGZxayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EizPK3InQbrNK/giphy.gif" />
 
 ---
 
@@ -722,25 +752,41 @@ Not meeting your goal is a valid outcome, but trying will always take you somewh
 </div>
 
 ---
-
-# Find Your Path
-
-<div v-click>
-Find what you want to be doing, and what you don't.
-</div>
-<div v-click>
-Set goals to learn what you need to get there.
-</div>
-
-<ul class="mt-4">
-  <li v-click>Side projects</li>
-  <li v-click>Open source</li>
-  <li v-click>Build a community</li>
-</ul>
-
----
 layout: center
 class: text-center
 ---
 
 # Never forget the people that you're writing code for.
+
+---
+class: text-center
+---
+
+# Thank you!
+
+<div class="flex flex-col items-center gap-4">
+  <img src="https://cdn.bsky.app/img/avatar/plain/did:plc:dfffydq7eqa5yof4cfeh23vh/bafkreifcll7h5kvls2es3wcatb4brezi73t2b6iryumbkg5or4mirawf54@jpeg" class="w-[250px]" />
+<ul>
+  <li class="flex gap-2 items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="w-6 h-6"><!-- Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>
+    <span>lindsaykwardell.com</span>
+  </li>
+  <li class="flex gap-2 items-center border-b border-stone-500">
+    <span class="text-xl w-6 h-6">☕️</span>
+    <span>humansideof.dev</span>
+  </li>
+  <li class="flex gap-2 items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36.25" height="32" viewBox="0 0 256 226" class="w-6 h-6"><!-- Icon from SVG Logos by Gil Barbara - https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt --><path fill="#1185FE" d="M55.491 15.172c29.35 22.035 60.917 66.712 72.509 90.686c11.592-23.974 43.159-68.651 72.509-90.686C221.686-.727 256-13.028 256 26.116c0 7.818-4.482 65.674-7.111 75.068c-9.138 32.654-42.436 40.983-72.057 35.942c51.775 8.812 64.946 38 36.501 67.187c-54.021 55.433-77.644-13.908-83.696-31.676c-1.11-3.257-1.63-4.78-1.637-3.485c-.008-1.296-.527.228-1.637 3.485c-6.052 17.768-29.675 87.11-83.696 31.676c-28.445-29.187-15.274-58.375 36.5-67.187c-29.62 5.041-62.918-3.288-72.056-35.942C4.482 91.79 0 33.934 0 26.116C0-13.028 34.314-.727 55.491 15.172"/></svg>
+    <span>lindsaykwardell.com</span>
+  </li>
+  <li class="flex gap-2 items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256" class="w-6 h-6"><!-- Icon from Skill Icons by tandpfun - https://github.com/tandpfun/skill-icons/blob/main/LICENSE --><g fill="none"><rect width="256" height="256" fill="#fff" rx="60"/><rect width="256" height="256" fill="#0A66C2" rx="60"/><path fill="#fff" d="M184.715 217.685h29.27a4 4 0 0 0 4-3.999l.015-61.842c0-32.323-6.965-57.168-44.738-57.168c-14.359-.534-27.9 6.868-35.207 19.228a.32.32 0 0 1-.595-.161V101.66a4 4 0 0 0-4-4h-27.777a4 4 0 0 0-4 4v112.02a4 4 0 0 0 4 4h29.268a4 4 0 0 0 4-4v-55.373c0-15.657 2.97-30.82 22.381-30.82c19.135 0 19.383 17.916 19.383 31.834v54.364a4 4 0 0 0 4 4M38 59.628c0 11.864 9.767 21.626 21.632 21.626c11.862-.001 21.623-9.769 21.623-21.631C81.253 47.761 71.491 38 59.628 38C47.762 38 38 47.763 38 59.627m6.959 158.058h29.307a4 4 0 0 0 4-4V101.66a4 4 0 0 0-4-4H44.959a4 4 0 0 0-4 4v112.025a4 4 0 0 0 4 4"/></g></svg>
+    <span>lindsaykwardell</span>
+  </li>
+  <li class="flex gap-2 items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="29.9" height="32" viewBox="0 0 256 274" class="w-6 h-6"><!-- Icon from SVG Logos by Gil Barbara - https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt --><path fill="#3088D4" d="M249.874 164.085c-3.753 19.307-33.613 40.438-67.908 44.533c-17.883 2.134-35.49 4.095-54.266 3.234c-30.705-1.407-54.933-7.33-54.933-7.33c0 2.99.184 5.836.553 8.498c3.992 30.302 30.047 32.118 54.728 32.964c24.912.852 47.094-6.142 47.094-6.142l1.023 22.521s-17.425 9.357-48.465 11.078c-17.116.94-38.369-.43-63.122-6.983c-53.686-14.21-62.92-71.436-64.332-129.502c-.43-17.24-.165-33.497-.165-47.094c0-59.375 38.903-76.779 38.903-76.779C58.6 4.074 92.259.286 127.25 0h.86c34.991.286 68.673 4.074 88.287 13.083c0 0 38.901 17.404 38.901 76.78c0 0 .488 43.807-5.425 74.222"/><path fill="#FFF" d="M209.413 94.469v71.894H180.93V96.582c0-14.71-6.19-22.176-18.57-22.176c-13.687 0-20.547 8.857-20.547 26.37v38.195h-28.315v-38.195c0-17.513-6.862-26.37-20.55-26.37c-12.379 0-18.568 7.466-18.568 22.176v69.78H45.897V94.47c0-14.694 3.741-26.37 11.256-35.009c7.75-8.638 17.898-13.066 30.496-13.066c14.575 0 25.613 5.602 32.911 16.808l7.095 11.893l7.096-11.893c7.296-11.206 18.334-16.808 32.911-16.808c12.597 0 22.745 4.428 30.496 13.066c7.513 8.639 11.255 20.315 11.255 35.009"/></svg>
+    <span>@lindaykwardell@mastodon.social</span>
+  </li>
+</ul>
+
+</div>
