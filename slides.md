@@ -764,15 +764,19 @@ class: text-center
 # Thank you!
 
 <div class="flex flex-col items-center gap-4">
-  <img src="https://cdn.bsky.app/img/avatar/plain/did:plc:dfffydq7eqa5yof4cfeh23vh/bafkreifcll7h5kvls2es3wcatb4brezi73t2b6iryumbkg5or4mirawf54@jpeg" class="w-[250px]" />
+  <img src="https://cdn.bsky.app/img/avatar/plain/did:plc:dfffydq7eqa5yof4cfeh23vh/bafkreifcll7h5kvls2es3wcatb4brezi73t2b6iryumbkg5or4mirawf54@jpeg" class="w-[200px]" />
 <ul>
   <li class="flex gap-2 items-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="w-6 h-6"><!-- Icon from Tabler Icons by Paweł Kuna - https://github.com/tabler/tabler-icons/blob/master/LICENSE --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>
     <span>lindsaykwardell.com</span>
   </li>
-  <li class="flex gap-2 items-center border-b border-stone-500">
+  <li class="flex gap-2 items-center">
     <span class="text-xl w-6 h-6">☕️</span>
     <span>humansideof.dev</span>
+  </li>
+  <li class="flex gap-2 items-center border-b border-stone-500">
+    <span class="text-xl w-6 h-6">📽️</span>
+    <span>https://remember-the-human.netlify.app/</span>
   </li>
   <li class="flex gap-2 items-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="36.25" height="32" viewBox="0 0 256 226" class="w-6 h-6"><!-- Icon from SVG Logos by Gil Barbara - https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt --><path fill="#1185FE" d="M55.491 15.172c29.35 22.035 60.917 66.712 72.509 90.686c11.592-23.974 43.159-68.651 72.509-90.686C221.686-.727 256-13.028 256 26.116c0 7.818-4.482 65.674-7.111 75.068c-9.138 32.654-42.436 40.983-72.057 35.942c51.775 8.812 64.946 38 36.501 67.187c-54.021 55.433-77.644-13.908-83.696-31.676c-1.11-3.257-1.63-4.78-1.637-3.485c-.008-1.296-.527.228-1.637 3.485c-6.052 17.768-29.675 87.11-83.696 31.676c-28.445-29.187-15.274-58.375 36.5-67.187c-29.62 5.041-62.918-3.288-72.056-35.942C4.482 91.79 0 33.934 0 26.116C0-13.028 34.314-.727 55.491 15.172"/></svg>
