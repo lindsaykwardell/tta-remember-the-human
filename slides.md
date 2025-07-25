@@ -60,17 +60,11 @@ class: text-center
 
 # "Where do you want to be in 5 years?"
 
-<div v-click class="mt-8 mb-4">
-What kinds of things do you want to be doing?
-</div>
+<div class="text-xl text-center my-4" v-click>What kinds of things do you <span class="text-purple-400">want</span> to be doing?</div>
 
-<div v-click class="">
-What do you not want to be doing?
-</div>
+<div class="text-xl text-center my-4" v-click>What kinds of things do you want to <span class="text-purple-400">avoid</span>?</div>
 
-<div v-click class="mt-4">
-What role do you want at your company?
-</div>
+<div class="text-xl text-center my-4" v-click>What kind of <span class="text-purple-400">role</span> do you want?</div>
 
 ---
 layout: center
@@ -276,7 +270,7 @@ layout: section
         <li>(You also count!)</li>
       </ul>
     </li>
-    <li>Is it more important than other things?</li>
+    <li>Is it more important than other tasks?</li>
   </ul>
 </v-clicks>
 
